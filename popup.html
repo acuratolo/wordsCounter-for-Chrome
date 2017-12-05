@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Set Page Color Popup</title>
+        <style>
+            h1 {
+                font-weight: lighter;
+                text-align: center;
+            }
+            button {
+                margin: 1rem 0;
+            }
+            #container {
+                min-height: 100px;
+                min-width: 100px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+<body>
+       <h1>TEXT COUNTER</h1>
+           <div id="container">
+               <label for="textInput">Please insert Yout text hier</label>
+               <input type="text" name="textInput" id="textInput" value="" placeholder="Your Text">
+               <br>
+               <button id="countButton">Count!</button>
+               <br>
+               <button id="selectedText" name="selectedText">Count selected text</button>
+               <br>
+               <p>Result</p>
+               <div id="textOutput"></div>
+           </div>
+           
+           <hr>
+
+        <div id="info">
+           <br>
+            <button id="hbbTV" name="hbbTV">HBB TV</button>
+            <br>
+        </div>
+
+
+    <!--
+- JavaScript and HTML must be in separate files: see our Content Security
+- Policy documentation[1] for details and explanation.
+-
+- [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+-->
+    <script src="popup.js"></script>
+</body>
+</html>
